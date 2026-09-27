@@ -17,6 +17,8 @@ and **Destroy Actor** with **Release Actor To Pool**. That's all the setup there
 
 Supported engine versions: 5.4, 5.5, 5.6, 5.7. Tested on Windows (Win64).
 
+**Get PoolKit:** [itch.io](https://barbed-wire-glove-games.itch.io/poolkit) (source plugin, $17.99). A Fab listing is coming.
+
 ---
 
 ## Contents
@@ -45,6 +47,11 @@ Supported engine versions: 5.4, 5.5, 5.6, 5.7. Tested on Windows (Win64).
 
 **From Fab:** install PoolKit to your engine from the Epic Games Launcher (Fab library), then enable it in
 **Edit > Plugins** (search "PoolKit") and restart the editor.
+
+**From itch.io:** download the zip for your engine version and unzip it so the `PoolKit` folder sits in
+`<YourProject>/Plugins/`. It's source code, so the project must be a C++ project with Visual Studio (or Rider) set up
+to build it. A Blueprint-only project becomes one when you add any C++ class (**Tools > New C++ Class**). Open the
+project and let the editor build the plugin.
 
 **Manual (project plugin):** copy the `PoolKit` folder into `<YourProject>/Plugins/` and restart the editor.
 C++ projects rebuild it automatically; Blueprint-only projects need the prebuilt binaries from Fab.
