@@ -17,7 +17,7 @@ and **Destroy Actor** with **Release Actor To Pool**. That's all the setup there
 
 Supported engine versions: 5.4, 5.5, 5.6, 5.7. Tested on Windows (Win64).
 
-**Get PoolKit:** [itch.io](https://barbed-wire-glove-games.itch.io/poolkit) (source plugin, $17.99). A Fab listing is coming.
+**Get PoolKit:** [itch.io](https://barbed-wire-glove-games.itch.io/poolkit) (source plugin, $17.99). The Fab listing is in review and not live yet; this page will link it once it is approved.
 
 ---
 
@@ -45,8 +45,9 @@ Supported engine versions: 5.4, 5.5, 5.6, 5.7. Tested on Windows (Win64).
 
 ## 1. Installation
 
-**From Fab:** install PoolKit to your engine from the Epic Games Launcher (Fab library), then enable it in
-**Edit > Plugins** (search "PoolKit") and restart the editor.
+**From Fab (once the listing is approved; it is in review today):** add PoolKit to your library, install it to your engine
+from the Epic Games Launcher, then enable it in **Edit > Plugins** (search "PoolKit") and restart the editor. Fab
+ships code plugins as source, so the project must be able to build C++ (see the itch.io steps below).
 
 **From itch.io:** download the zip for your engine version and unzip it so the `PoolKit` folder sits in
 `<YourProject>/Plugins/`. It's source code, so the project must be a C++ project with Visual Studio (or Rider) set up
@@ -54,7 +55,7 @@ to build it. A Blueprint-only project becomes one when you add any C++ class (**
 project and let the editor build the plugin.
 
 **Manual (project plugin):** copy the `PoolKit` folder into `<YourProject>/Plugins/` and restart the editor.
-C++ projects rebuild it automatically; Blueprint-only projects need the prebuilt binaries from Fab.
+C++ projects rebuild it automatically; Blueprint-only projects must first become C++ projects (Tools > New C++ Class) so the plugin can be built.
 
 PoolKit has three modules:
 
@@ -627,4 +628,4 @@ Apply Recommendations / `PoolKit.AutoTune.Apply`).
 
 ---
 
-Support: see the Fab listing page for the support contact.
+Support: open an issue on this repository, or comment on the itch.io page: https://barbed-wire-glove-games.itch.io/poolkit
