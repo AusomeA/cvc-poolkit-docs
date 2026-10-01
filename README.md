@@ -291,8 +291,8 @@ the replicated pooled actors it can see (state, hidden, collision, location).
 
 | Case | Supported | Notes |
 |---|---|---|
-| Replicated actors pooled on a listen server | Yes | Tested with a server and two clients as separate processes on UE 5.6 |
-| Replicated actors pooled on a dedicated server | Yes | Tested the same way on UE 5.6 |
+| Replicated actors pooled on a listen server | Yes | Tested with a server and two clients (one joining late) as separate processes on one PC over localhost, on UE 5.4, 5.5, 5.6 and 5.7 (40/40 checks each) |
+| Replicated actors pooled on a dedicated server | Yes | Tested the same way on UE 5.4, 5.5, 5.6 and 5.7 |
 | Actors that replicate movement (projectiles) | Yes | Location comes from replicated movement |
 | Actors that don't replicate movement | Yes | Reuse teleports the client copy to the acquire transform |
 | Late-joining clients | Yes | Inactive pooled actors are not sent to them |
