@@ -15,7 +15,7 @@ and **Destroy Actor** with **Release Actor To Pool**. That's all the setup there
 - Prewarm, limits, auto-release, live stats overlay, console commands, a built-in benchmark and 27 automation tests.
 - No content, so it works in any project.
 
-Supported engine versions: 5.4, 5.5, 5.6, 5.7. Tested on Windows (Win64).
+Supported engine versions: 5.4, 5.5, 5.6, 5.7, 5.8. Tested on Windows (Win64). On 5.8 (5.8.3) the plugin builds and the 27 automation tests pass; the multi-process multiplayer test (server plus two clients) was run on 5.4-5.7 only.
 
 **Get PoolKit:** [itch.io](https://barbed-wire-glove-games.itch.io/poolkit) (source plugin, $17.99). The Fab listing is in review and not live yet; this page will link it once it is approved.
 
