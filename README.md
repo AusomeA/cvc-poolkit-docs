@@ -15,9 +15,9 @@ and **Destroy Actor** with **Release Actor To Pool**. That's all the setup there
 - Prewarm, limits, auto-release, live stats overlay, console commands, a built-in benchmark and 27 automation tests.
 - No content, so it works in any project.
 
-Supported engine versions: 5.4, 5.5, 5.6, 5.7, 5.8. Tested on Windows (Win64). On 5.8 (5.8.3) the plugin builds and the 27 automation tests pass; the multi-process multiplayer test (server plus two clients) was run on 5.4-5.7 only.
+Supported engine versions: 5.4, 5.5, 5.6, 5.7, 5.8. Tested on Windows (Win64). On 5.8 (5.8.3) the plugin builds and the 27 automation tests pass; the multi-process multiplayer test (server plus two clients) was run on 5.4-5.8, and on 5.8.3 both the dedicated and the listen server passed all 40 checks.
 
-**Get PoolKit:** [itch.io](https://barbed-wire-glove-games.itch.io/poolkit) (source plugin, $17.99). The Fab listing is in review and not live yet; this page will link it once it is approved.
+**Get PoolKit:** [Fab](https://www.fab.com/listings/97bc42c6-bd16-4b1b-bfd1-67f19e8ec4c7) or [itch.io](https://barbed-wire-glove-games.itch.io/poolkit). Both are the same source plugin, one download per engine version.
 
 ---
 
@@ -291,8 +291,8 @@ the replicated pooled actors it can see (state, hidden, collision, location).
 
 | Case | Supported | Notes |
 |---|---|---|
-| Replicated actors pooled on a listen server | Yes | Tested with a server and two clients (one joining late) as separate processes on one PC over localhost, on UE 5.4, 5.5, 5.6 and 5.7 (40/40 checks each) |
-| Replicated actors pooled on a dedicated server | Yes | Tested the same way on UE 5.4, 5.5, 5.6 and 5.7 |
+| Replicated actors pooled on a listen server | Yes | Tested with a server and two clients (one joining late) as separate processes on one PC over localhost, on UE 5.4, 5.5, 5.6, 5.7 and 5.8 (40/40 checks each) |
+| Replicated actors pooled on a dedicated server | Yes | Tested the same way on UE 5.4, 5.5, 5.6, 5.7 and 5.8 |
 | Actors that replicate movement (projectiles) | Yes | Location comes from replicated movement |
 | Actors that don't replicate movement | Yes | Reuse teleports the client copy to the acquire transform |
 | Late-joining clients | Yes | Inactive pooled actors are not sent to them |
