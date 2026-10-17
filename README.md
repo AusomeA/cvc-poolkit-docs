@@ -45,7 +45,7 @@ Supported engine versions: 5.4, 5.5, 5.6, 5.7, 5.8. Tested on Windows (Win64). O
 
 ## 1. Installation
 
-**From Fab (once the listing is approved; it is in review today):** add PoolKit to your library, install it to your engine
+**From Fab:** add PoolKit to your library, install it to your engine
 from the Epic Games Launcher, then enable it in **Edit > Plugins** (search "PoolKit") and restart the editor. Fab
 ships code plugins as source, so the project must be able to build C++ (see the itch.io steps below).
 
